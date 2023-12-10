@@ -1,0 +1,131 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+.product {
+    background-color: #25573B;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;;
+} 
+h1 {
+    
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+/* Add space under the navigation bar */
+body {
+    margin-top: 50px; /* Adjust the value to control the amount of space */
+  }
+
+img{
+    width: 100%;
+    height: 100%;
+}
+a:link {
+    color: #63E6A2;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+}
+a:visited {
+    color: #63A9E6;
+    background-color: transparent;
+    text-decoration: none;
+}
+    
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#button-bar {
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+#button-bar button {
+            float: left;
+            width: 25%; /* Set width to distribute buttons evenly */
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+#button-bar button:hover {
+    background-color: #ddd;
+    border: none;
+}
+
+/* Navigation Bar */
+
+    /* Navigation Bar */
+nav {
+    color: black;
+    padding: 15px 0;
+    position: fixed;
+    width: auto;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.5s; /* Smooth background color transition */
+    }
+
+    nav h1 {
+    float: left;
+    margin: 0;
+    }
+
+    nav ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    }
+
+    nav ul li {
+    display: inline-block;
+    margin-left: 20px;  
+    }
+
+    nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth text color transition */
+    }
+
+    nav a:hover {
+    color: #4CAF50; /* Green color on hover */
+    }
+
+  /* Form Submit*/
+  input[type="submit"] {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 13px; /* Adjust font size */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }

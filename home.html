@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="styleProto.css">
+        
+    </head>
+    <style>
+        
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+        }
+
+        .product-grid img {
+            width: 300px;
+            height: 300px;
+            border-radius: 3px;
+        }
+
+        .product-grid .product-name {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            background-color: lightgray;
+        }
+        </style>
+        <nav>
+            <h1>Local BIZZ🐝</h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="checkout.html">Cart</a></li>
+            </ul>   
+        </nav>
+        
+        <body>
+            <div class="product-grid">
+                <button onclick="window.location.href= 'product.html'" class="product">
+                    <h3>Cowboy Boots</h3>
+                    <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/811YapSglWL._AC_SY695_.jpg" alt="Product">
+                    <p id="location1" class="product-location">HANDMADE IN ORANGE, USA</p>
+                    <form action="checkout.html">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </button>
+                <button onclick="window.location.href= 'product2.html'" class="product">
+                    <h3>Cowboy Hat</h3>
+                    <img src="https://media.istockphoto.com/id/1184522745/photo/rodeo-horse-rider-wild-west-culture-americana-and-american-country-music-concept-theme-with-a.jpg?s=612x612&w=0&k=20&c=nQ5A-1FOuIvujY6AObkJ9xntyhfASTBG1zkh2-9yGg0=" alt="Product">
+                    <p id="location2" class="product-location">HANDMADE IN NASHVILLE, USA</p>
+                    <form action="checkout.html">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </button>
+                <button onclick="window.location.href= 'product3.html'" class="product">
+                    <h3>Jeans</h3>
+                    <img src="https://lsco.scene7.com/is/image/lsco/726930130-alt1-pdp-lse?fmt=jpeg&qlt=70&resMode=bisharp&fit=crop,0&op_usm=1.25,0.6,8&wid=2000&hei=1800" alt="Product">
+                    <p id="location3" class="product-location">HANDMADE IN SAN DIEGO, USA</p>
+                    <form action="checkout.html">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </button>
+                <button onclick="window.location.href= 'product4.html'" class="product">
+                    <h3>Belt</h3>
+                    <img src="https://cdn11.bigcommerce.com/s-zp4wjqaddn/images/stencil/1280x1280/products/26146/74635/Nocona_Mens_Western_Belt_-_Brown_Distressed_-_N1011644__76998.1666730465.png?c=2" alt="Product">
+                    <p id="location4" class="product-location">HANDMADE IN NEW YORK, USA</p>
+                    <form action="checkout.html">
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </button>
+            </div>
+
+            <h2>More Products</h2>
+            <div id="button-bar">
+                <button onclick="alert('Not Implemented')">Plants</button>
+                <button onclick="alert('Not Implemented')">Honey</button>
+                <button onclick="alert('Not Implemented')">Clothes</button>
+                <button onclick="alert('Not Implemented')">More!</button>
+            </div>
+        </body>
+</html>
